@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primeiro Desafio de Projeto Java">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--Script StarWars-->
+    <script>
+        function clique(img) {
+            var modalJ = document.getElementBiId("janela-modal");
+            var modalI = document.getElementById("img-modal");
+            var modalB = document.getElementById("btnFechar");
+
+            modalJ.style.display = "block";
+            modalI.src = img;
+            modalB.onclick = function () {
+                modalJ.style.display = "nome";
+            }
+        }          
+    </script>
+    <!--Script WarHammer-->
+    <script>
+        function clique(imgHammer) {
+            var modalJHammer = document.getElementBiId("janela-modal-hammer");
+            var modalIHammer = document.getElementById("img-modal-hammer");
+            var modalBHammer = document.getElementById("btnFechar-hammer");
+
+            modalJHammer.style.display = "block";
+            modalIHammer.src = imgHammer;
+            modalBHammer.onclick = function () {
+                modalJHammer.style.display = "nome";
+            }
+        }          
+    </script>
+    <!--Script StarTrek-->
+    <script>
+        function clique(imgTrek) {
+            var modalJTrek = document.getElementBiId("janela-modal-trek");
+            var modalITrek = document.getElementById("img-modal-trek");
+            var modalBTrek = document.getElementById("btnFechar-trek");
+
+            modalJTrek.style.display = "block";
+            modalITrek.src = imgTrek;
+            modalBTrek.onclick = function () {
+                modalJTrek.style.display = "nome";
+            }
+        }          
+    </script>
+    <!--Script StarMarvel-->
+    <script>
+        function clique(imgMarvel) {
+            var modalJMarvel = document.getElementBiId("janela-modal-marvel");
+            var modalIMarvel = document.getElementById("img-modal-marvel");
+            var modalBMarvel = document.getElementById("btnFechar-marvel");
+
+            modalJMarvel.style.display = "block";
+            modalIMarvel.src = imgMarvel;
+            modalBMarvel.onclick = function () {
+                modalJMarvel.style.display = "nome";
+            }
+        }          
+    </script>
+    <!--Script DC comics-->
+    <script>
+        function clique(imgDComics) {
+            var modalJDComics = document.getElementBiId("janela-modal-dcomics");
+            var modalIDComics = document.getElementById("img-modal-dcomics");
+            var modalBDComics = document.getElementById("btnFechar-dcomics");
+
+            modalJDComics.style.display = "block";
+            modalIDComics = imgDComics;
+            modalBDComics.onclick = function () {
+                modalJDComics.style.display = "nome";
+            }
+        }          
+    </script>
+
+    <title>Docker Fundamentals</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho-menu">
+            <button class="cabecalho-menu-item-starWars">Star Wars</button>
+            <button class="cabecalho-menu-item-warHammer">WarHammer</button>
+            <button class="cabecalho-menu-item-starTrek">Star Trek</button>
+            <button class="cabecalho-menu-item-marvel">Marvel</button>
+            <button class="cabecalho-menu-item-dComics">DC COMICIS</button>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo"> Um Hello-World Diferente</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Uma forma um pouco diferente de Hello-World</h2>
+            </div>
+        </section>
+
+        <section class="conteudo-secundario">
+            <h3 class="conteudo-secundario-titulo">O procedimento é simples!!</h3>
+            <p class="conteudo-secundario-paragrafo">1.Clicke no botão no topo com sua ficção preferida;</p>
+            <p class="conteudo-secundario-paragrafo">2. Pode não ser a preferida tambem!!</p>
+            <p class="conteudo-secundario-paragrafo">3. Aguarde pela imagem</p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+    </footer>
+
+    <div id="modal-star-wars" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <img src="img/starwars.jpg" alt="">
+            <p class="texto-starWars"> Hello-world<strong>?! </strong>Ops!! Botão Errado.</p>
+        </div>
+    </div>
+
+    <div id="modal-warHammer" class="modal-container-hammer">
+        <div class="modal-hammer">
+            <button class="fecharHammer">x</button>
+            <img src="img/warhammer2.webp" alt="">
+            <p class="texto-hammer"> <strong>The Emperor Protects!! </strong>Apenas os seus!!</p>
+        </div>
+    </div>
+
+    <div id="modal-starTrek" class="modal-container-trek">
+        <div class="modal-trek">
+            <button class="fecharTrek">x</button>
+            <img class="spock" src="img/spock.jpg" alt="">
+            <p class="texto-trek"> <strong>Hello-World...Nada </strong><br>Live Long and prosper</br></p>
+
+        </div>
+    </div>
+
+    <div id="modal-tMarvel" class="modal-container-marvel">
+        <div class="modal-marvel">
+            <button class="fecharMarvel">x</button>
+            <img src="img/marvel.jpg.webp" alt="">
+            <p class="texto-marvel"> <strong>Hello-Wooor.....!? </strong>Esse eu dispenso!!</p>
+
+        </div>
+    </div>
+
+    <div id="modal-tDComics" class="modal-container-dcomics">
+        <div class="modal-dcomics">
+            <button class="fecharDComics">x</button>
+            <img src="img/darkseid-odyssey.jpg" alt="">
+            <p class="texto-marvel"> <strong>Hell.....!? </strong>Definitivamente não!!</p>
+
+        </div>
+    </div>
+
+    <script type="application/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>

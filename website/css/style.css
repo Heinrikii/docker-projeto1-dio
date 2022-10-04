@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
+/*Inicio Detalhes Modelo*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(50deg, #000 16.62%, #4b0082 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item-starWars,
+.cabecalho-menu-item-warHammer,
+.cabecalho-menu-item-starTrek,
+.cabecalho-menu-item-marvel,
+.cabecalho-menu-item-dComics {
+
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #4b0082;
+    cursor: pointer;
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+.conteudo {
+    margin-bottom: 40px;
+    border-top: 0.4px solid #fff2e7;
+
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+.conteudo-secundario {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+.footer-imagem {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+    margin-bottom: 0%;
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*Fim Detalhes Modelo*/
+
+/*Inicio Janela Poup*/
+.texto-starWars,
+.texto-hammer {
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 40px;
+    background: #4b0082;
+}
+
+.texto-trek {
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: -5px;
+    background: #4b0082;
+
+}
+
+.texto-marvel {
+    font-family: 'Vampiro One', cursive;
+    color: #bab8b5;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: -5px;
+    background: #4b0082;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container-hammer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container-trek {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container-marvel {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-container-dcomics {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar-wars {
+    display: flex;
+}
+
+.modal-container-hammer.mostrarHammer {
+    display: flex;
+}
+
+.modal-container-trek.mostrarTrek {
+    display: flex;
+}
+
+.modal-container-marvel.mostrarMarvel {
+    display: flex;
+}
+
+.modal-container-dcomics.mostrarDComics {
+    display: flex;
+}
+
+.modal {
+    min-width: 300px;
+    border: 10px solid #4b0082;
+    box-shadow: 0 0 0 10px #4b0082;
+    position: relative;
+}
+
+.modal-hammer {
+    min-width: 300px;
+    border: 10px solid #4b0082;
+    box-shadow: 0 0 0 10px #4b0082;
+    position: relative;
+}
+
+.modal-Trek {
+    max-height: 200px;
+    border: 10px solid #4b0082;
+    box-shadow: 0 0 0 10px #4b0082;
+    position: relative;
+}
+
+.modal-marvel {
+    min-width: 300px;
+    border: 10px solid #4b0082;
+    box-shadow: 0 0 0 10px #4b0082;
+    position: relative;
+}
+
+.modal-dcomics {
+    min-width: 300px;
+    border: 10px solid #4b0082;
+    box-shadow: 0 0 0 10px #4b0082;
+    position: relative;
+}
+
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes modal-hammer {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes modal-trek {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes modal-marvel {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes modal-dcomics {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar-wars .modal {
+    animation: modal .6s;
+}
+
+.mostrarHammer .modal-hammer {
+    animation: modal-hammer .6s;
+}
+
+.mostrarTrek .modal-trek {
+    animation: modal-trek .6s;
+}
+
+.mostra-marvel .modal-marvel {
+    animation: modal-trek .6s;
+
+}
+
+.mostra-DComics .modal-dcomics {
+    animation: modal-dccomics .6s;
+
+}
+
+.fechar {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #4b0082;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.fecharHammer {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #4b0082;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.fecharTrek {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #4b0082;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.fecharMarvel {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #4b0082;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.fecharDComics {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #4b0082;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+/*Fim Janela Poup*/
